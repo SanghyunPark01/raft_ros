@@ -1,0 +1,7 @@
+RAFT:
+  weight_path: "/mnt/HDD1/ros_workspace/catkin_ws/src/raft_ros/weights/raft-things.pth"
+  is_small: false # true, false
+  device: "cuda"
+ROS:
+  prev_img: "/test_prev" # prev image topic name
+  curr_img: "/test_curr" # curr image topic name

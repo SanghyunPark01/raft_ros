@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <rosparam command="load" file="$(find raft_ros)/config/config.yaml" />
+    <node pkg="raft_ros" type="main.py" name="raft_ros" output="screen">
+    </node>
+    <node pkg="raft_ros" type="test_node.py" name="test_img_pair_pub" output="screen">
+    </node>
+</launch>

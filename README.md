@@ -1,4 +1,38 @@
-# RAFT
+# RAFT ROS Wrapper
+ROS Wrapper for RAFT
+
+### Build
+```bash
+$ cd (your_ros_ws)/src
+$ git clone https://github.com/SanghyunPark01/raft_ros.git
+$ cd ..
+$ catkin_make
+```
+
+### Modify Config File
+- weight path in `ros/config/config.yaml`  
+
+### Before Run  
+check ros topic  
+- **subscribe**: prev image frame
+- **subscribe**: curr image frame
+- **publish**: result image  
+
+### Run
+```bash
+$ roslaunch roslaunch raft_ros run.launch
+```  
+
+### Result
+
+<div align="center">
+    <a href="./">
+        <img src="./ros/img/result.png" width="79%"/>
+    </a>
+</div>
+
+---
+
 This repository contains the source code for our paper:
 
 [RAFT: Recurrent All Pairs Field Transforms for Optical Flow](https://arxiv.org/pdf/2003.12039.pdf)<br/>
